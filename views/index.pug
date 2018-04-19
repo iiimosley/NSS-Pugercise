@@ -1,0 +1,14 @@
+html
+    head
+        meta(charset="utf-8")
+        title "pug practice"
+        include styles.pug
+    body
+        include partials/nav.pug
+        block content
+            .main This is home
+                ul
+                    each bake in pastries
+                        li #{bake.pastry}: $#{bake.price}
+        script(src="client/main.js")      
+        

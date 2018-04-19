@@ -1,0 +1,32 @@
+body {
+    color: white;
+    background: salmon;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+.navList li {
+    display: inline-block;
+    margin: .4em 2em;
+    font-size: 2em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.boom {
+    animation: boomBoom 2s;
+}
+
+@keyframes boomBoom {
+    0% {
+        font-size: 2em;
+    }
+    50% {
+        font-size: 3em;
+    }
+    100% {
+        font-size: 2em;
+    }
+}
